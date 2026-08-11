@@ -5,7 +5,6 @@ public class bancario {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         
-        // Declaração de variáveis 
         int d = 0;
         int somaD = 0;
         int s = 0;
@@ -58,7 +57,6 @@ public class bancario {
                     break;
             }
 
-            // Simulação do "limpatela" do VisualG
             if (resp != 4) {
                 System.out.print("\n\n\n\n\n");
             }
