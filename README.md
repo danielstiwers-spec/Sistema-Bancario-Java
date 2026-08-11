@@ -22,14 +22,18 @@ A escolha do usuário deve ser processada obrigatoriamente através de uma estru
 decisão (*switch-case ou if-else*).
 
 Lógica das Operações
+
 Depositar: O programa deve ler um valor. Se for maior que zero, soma-o ao saldo atual.
 Caso contrário, exibe um alerta de valor inválido.
+
 Sacar: O programa lê a quantia desejada. Deve-se validar se o valor é positivo e se o saldo
 atual é suficiente para cobrir o saque. Se sim, subtrai o valor do saldo; se não, exibe uma
 mensagem de erro clara (*ex: "Saldo insuficiente"*).
+
 Extrato: Exibe o valor do saldo atual na tela. Busque formatar a saída com duas casas
 decimais utilizando System.out.printf(). (Opcional: implementar um array ou ArrayList para
 listar o histórico das operações realizadas).
+
 Sair: Altera a condição do laço while para encerrar o loop, exibe uma mensagem de
 encerramento do sistema e finaliza a execução.
 
