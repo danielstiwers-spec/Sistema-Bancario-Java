@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class bancario {
 
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in); // Cria um Scanner para ler a resp
         
         int d = 0;
         int somaD = 0;
@@ -21,7 +21,7 @@ public class bancario {
             System.out.println("=== [4] Sair      ===");
             System.out.println("---------------------");
             
-            resp = teclado.nextInt();
+            resp = teclado.nextInt(); // resp recebe o Scanner (inteiro) para ler a entrada
 
             switch (resp) {
                 case 1:
@@ -37,7 +37,7 @@ public class bancario {
                 case 2:
                     System.out.print("Quanto deseja sacar? ");
                     s = teclado.nextInt();
-                    if (s > 0 && somaD >= s) { 
+                    if (s > 0 && somaD >= s) { // "&&" significa "e"
                         somaD = somaD - s;
                     } else {
                         System.out.println("Saldo insuficiente");
@@ -49,16 +49,16 @@ public class bancario {
                     System.out.println("===      Saldo Bancário      ===");
                     System.out.println("================================");
                     System.out.println("--------------------------------");
-                    System.out.printf("---     R$ %,d,00      ===\n", somaD);
+                    System.out.printf("---        R$ %,d,00      ===\n", somaD); 
                     System.out.println("--------------------------------");
                     break;
                 default:
                     System.out.println("Volte Sempre!");
-                    break;
+                    break; // break encerra o switch, retornando ao começo.
             }
 
             if (resp != 4) {
-                System.out.print("\n\n\n\n\n");
+                System.out.print("\n\n\n\n\n"); // "\n" significa "break line". Neste caso, apenas 4 linhas.
             }
 
         } while (resp != 4); 
