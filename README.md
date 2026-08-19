@@ -17,7 +17,7 @@ memória (*resource leak*).
 2. Gerenciamento de Saldo
 O saldo deve ser armazenado em uma variável do tipo primitivo double.
 3. Menu Iterativo e Controle de Fluxo
-O menu deve ser exibido continuamente dentro de um laço while.
+O menu deve ser exibido continuamente dentro de um laço while.\n
 A escolha do usuário deve ser processada obrigatoriamente através de uma estrutura de
 decisão (*switch-case ou if-else*).
 

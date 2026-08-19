@@ -12,7 +12,7 @@ public class bancario {
 
         do {
             System.out.println("================================");
-            System.out.println("===     Sistema Bancário     ===");
+            System.out.println("===     Sistema Bancario     ===");
             System.out.println("================================");
             System.out.println("---------------------");
             System.out.println("=== [1] Depositar ===");
@@ -20,7 +20,7 @@ public class bancario {
             System.out.println("=== [3] Extrato   ===");
             System.out.println("=== [4] Sair      ===");
             System.out.println("---------------------");
-            
+            System.out.print("Qual operacao deseja realizar? ");
             resp = teclado.nextInt(); // resp recebe o Scanner (inteiro) para ler a entrada
 
             switch (resp) {
@@ -30,7 +30,7 @@ public class bancario {
                     if (d > 0) {
                         somaD = somaD + d;
                     } else {
-                        System.out.println("Valor invalido");
+                        System.out.println("Valor invalido \n");
                     }
                     break;
 
@@ -49,11 +49,11 @@ public class bancario {
                     System.out.println("===      Saldo Bancário      ===");
                     System.out.println("================================");
                     System.out.println("--------------------------------");
-                    System.out.printf("---        R$ %,d,00      ===\n", somaD); 
+                    System.out.printf("===        R$ %,d,00      ===\n", somaD); 
                     System.out.println("--------------------------------");
                     break;
                 default:
-                    System.out.println("Volte Sempre!");
+                    System.out.println("Volte Sempre!\n");
                     break; // break encerra o switch, retornando ao começo.
             }
 
